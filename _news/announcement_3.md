@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-06-16 00:00:00-0400
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper [Method to Create a Metaverse Using Smartphone Data](https://link.springer.com/chapter/10.1007/978-3-031-05939-1_4) 
+has been accepted in the proceedings of International Conference on Human-Computer Interaction (HCII) 2022.

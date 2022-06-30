@@ -2,24 +2,30 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Staff Engineer @ <a href='https://research.samsung.com'>Samsung Research</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: saemi.jpg
   image_cicular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi :smile: ! 
+I'm a Staff Engineer at [Think Tank Team](https://thinktankteam.info/), Samsung Research. 
+I completed my PhD in Interdisciplinary Information Studies at University of Tokyo, 
+where I was fortunate to be advised by [Kiyoharu Aizawa](https://www.hal.t.u-tokyo.ac.jp/~aizawa/) on affective systems for font and image.
+My graduate study was generously supported by [Japan Government (MEXT) Scholarship](https://www.mext.go.jp/en/index.htm).
+During my PhD studies, I participated AI Research Internship program at [Naver corp.](https://clova.ai/) (2018)
+and worked on Ad design policy project at Multimedia group. 
+I also spent time at Multimedia and Human Understanding Group (MHUG) at University of Trento (2017) and worked on font-image pairing
+with [Nicu Sebe](https://disi.unitn.it/~sebe/) funded by the [European Commission](https://www.emhrpp.com/)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interest is to support effective communication between humans and systems and leverage
+user experience in the use of the systems by using multimedia processing techniques.
+I love to work on problems related to Affective Computing, and also deeply engaged in machine learning. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
