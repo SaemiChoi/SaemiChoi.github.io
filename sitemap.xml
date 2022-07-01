@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?> <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <url> <loc>https://saemichoi.github.io/news/announcement_1/</loc> <lastmod>2022-04-01T03:00:00+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/news/announcement_2/</loc> <lastmod>2022-04-30T03:00:00+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/news/announcement_3/</loc> <lastmod>2022-06-16T13:00:00+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/projects/1_project/</loc> <lastmod>2022-06-30T18:21:57+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/projects/2_project/</loc> <lastmod>2022-06-30T18:21:57+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/projects/3_project/</loc> <lastmod>2022-06-30T18:21:57+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/projects/4_project/</loc> <lastmod>2022-06-30T18:21:57+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/projects/5_project/</loc> <lastmod>2022-06-30T18:21:57+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/projects/6_project/</loc> <lastmod>2022-06-30T18:21:57+09:00</lastmod> </url> <url> <loc>https://saemichoi.github.io/</loc> </url> <url> <loc>https://saemichoi.github.io/cv/</loc> </url> <url> <loc>https://saemichoi.github.io/blog/</loc> </url> <url> <loc>https://saemichoi.github.io/projects/</loc> </url> <url> <loc>https://saemichoi.github.io/publications/</loc> </url> </urlset>
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}.html</loc>
+        {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
+
+        {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+        {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+        {% endif %}
+
+        {% if post.sitemap.priority == null %}
+        <priority>0.5</priority>
+        {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+        {% endif %}
+
+    </url>
+    {% endfor %}
+</urlset>
